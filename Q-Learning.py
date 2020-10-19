@@ -1,18 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import gym
 import random
 import numpy as np
 import time
 # Environment
 env = gym.make("Taxi-v3")
-
-
-# In[2]:
 
 
 # Training parameters for Q learning
@@ -24,8 +18,6 @@ num_of_steps = 500 # per each episode
 # Q tables for rewards
 Q_reward = -1000*np.ones((500,6))
 
-
-# In[3]:
 
 
 # Training w/ random sampling of actions
@@ -52,7 +44,6 @@ for episodes in range(num_of_episodes):
     episodes +=1
 
 
-# In[5]:
 
 
 state = env.reset()
